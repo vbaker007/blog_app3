@@ -1,3 +1,23 @@
+Blog App
+Feature Test:
+
+  - Articles
+    - Id
+    - Title
+    - Body
+
+  - Users
+    - ID
+    - Email
+    - Password
+
+  - Comments
+    - ID
+    - Body
+    - User_ID
+    - Article_ID
+
+
 == README
 
 This README would normally document whatever steps are necessary to get the
