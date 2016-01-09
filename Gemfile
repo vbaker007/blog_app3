@@ -36,14 +36,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'rspec-rails'
+  #gem 'rspec-rails'
   gem 'rspec-support', '~> 3.4.0'
   gem 'guard-rspec', require: false
   gem 'spring-commands-rspec'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+ # gem 'byebug'
   gem 'simplecov', :require => false, :group => :test
-  gem 'selenium-webdriver'
+ # gem 'selenium-webdriver'
 end
 
 group :development do
