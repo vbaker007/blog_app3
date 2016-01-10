@@ -45,8 +45,8 @@ guard :rspec, cmd: "rspec" do
   dsl.watch_spec_files_for(rails.app_files)
   dsl.watch_spec_files_for(rails.views)
 
-  watch(%r{^app/controllers/(.+)_(controller)\.rb$}) {"spec/features"}
-  watch(rails.controllers) do |m|
+  watch(%r{^app/controllers/(.+)_(controller)\.rb$}) { "spec/features" }
+  watch(%r{^app/models/(.+)\.rb$} { "spec/features" }
     [
       rspec.spec.("routing/#{m[1]}_routing"),
       rspec.spec.("controllers/#{m[1]}_controller"),
