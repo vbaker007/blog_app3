@@ -25,12 +25,12 @@
         </div>
       </div>
       <div class="form-group">
+        <div class="control-label col-md-3">
+          <%= f.label :remember_me, class: 'form-group' %>
+        </div>
         <div class="col-md-9">
           <% if devise_mapping.rememberable? -%>
            <%= f.check_box :remember_me, class: 'form-group' %>
-        </div>
-        <div class="control-label col-md-3">
-          <%= f.label :remember_me, class: 'form-group' %>
         </div>
       </div>
         <% end -%>
