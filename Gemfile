@@ -58,3 +58,10 @@ group :test do
   gem 'capybara'
 end
 
+group :production do
+  gem 'rails_12factor'
+  gem 'puma', '~> 2.15.3'
+  #gem 'unicorn'
+  gem 'pg'
+end
+
