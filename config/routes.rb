@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
   get 'articles/index'
-
+  get 'welcome/index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
    root 'articles#index'
+   #root 'welcome#index'
 
    resources :articles do
     resources :comments

@@ -119,19 +119,19 @@ img:last-of-type {
 }
 </style>
 <div id="title" class="slide header">
-  <h1>Welcome to the Blog App where Readers can share their thoughts, stories, and comment on others' written work! Enjoy!</h1>
+  <h1>Pure CSS Parallax</h1>
 </div>
 
 <div id="slide1" class="slide">
   <div class="title">
-    <h1>All Posts are featured here</h1>
-    <p>Sign up and join in on the fun!</p>
+    <h1>Slide 1</h1>
+    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
   </div>
 </div>
 
 <div id="slide2" class="slide">
   <div class="title">
-    <h1>Readers can navigate posts1</h1>
+    <h1>Slide 2</h1>
     <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
   </div>
   <img src="http://lorempixel.com/640/480/abstract/6/">
@@ -140,31 +140,11 @@ img:last-of-type {
 
 <div id="slide3" class="slide">
   <div class="title">
-    <h1>Readers can comment on fellow users' posts</h1>
+    <h1>Slide 3</h1>
     <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
   </div>
 </div>
 
 <div id="slide4" class="slide header">
-    <h1>Listing All Articles</h1>
+    <h1>The End</h1>
 </div>
-
-<% if user_signed_in? %>
-  <%= link_to "New Article", new_article_path, class: "btn btn-default btn-lg", id: "new-article-btn" %>
-<% end %>
-
-<% @articles.each do |article| %>
-  <div class="well well-lg">
-    <div class="article-title">
-      <%= link_to article.title, article_path(article) %>
-    </div>
-    <div class="article-body">
-      <em><%= truncate(article.body, length: 500) %></em>
-    </div>
-    <div class="author">
-      <% if article.user %>
-        <small>Created by: <%= article.user.email %></small>
-      <% end %> 
-    </div>
-  </div>
-<% end %>
